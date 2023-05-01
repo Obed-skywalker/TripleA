@@ -1,0 +1,233 @@
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: radial-gradient(#a2c0db,#0614d6);
+    color: white;
+    
+}
+.navbar1{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    
+}
+.nav{ /*Manda el menu a la derecha*/
+    flex:flex;
+    justify-content:space-between;
+    text-align: right;
+    margin: auto;   
+}
+.navbar ul{
+    display: flex;
+    text-align: right;
+    list-style-type: none;
+}
+
+.navbar ul li{
+    display: flex;
+    margin-right: 10px;   
+}
+#MenuItems li:hover{
+    background-color: #0614d6;
+}
+.brand-title {
+    color: #000000;
+    border: #000000;
+    font-size:xx-large;
+    text-align: center;
+}
+a{
+    text-decoration :none;
+    color: rgb(252, 251, 251)  ;
+    font-size: 1.5rem;
+}
+p{
+    color: rgb(231, 229, 229);
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+ }
+ .row{
+    display: flex;
+    align-items:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ .col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+ }.col-2 img{
+    max-width: 100%;
+    padding: 50px, 0;
+ }
+ .col-2 h1{
+    font-size: 50px;
+    line-height: 50px;
+    margin: 25px 0;
+ }
+ .btn{
+    display: inline-block;
+    background: #f00b0b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+ }
+ .btn:hover{
+    background: #680c0c;
+ }
+
+ .header{
+    background: radial-gradient(#a2c0db,#0614d6);
+ }
+ .header .row{
+    margin-top: 10px;
+ }
+ .products{
+    margin-top: 10px;
+    background: radial-gradient(rgb(255, 255, 255), rgb(255, 0, 0));
+ }
+ .row2{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ .col-3{
+    flex-basis: 40%;
+    min-width: 250px;
+    margin-bottom:  10px;
+    min-height: 300px; 
+ }
+ .col-3 img{
+    max-width: 100%;
+    padding: 50px, 0;
+ }
+ .small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #dadfe4;
+ }
+ .col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+ }
+ .col-4 img{
+    width: auto;
+ }
+ .title {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    line-height: 60px;
+    color: rgb(252, 252, 252);
+ }
+.footer{
+    background: #000;
+    color: #8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2{
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+ul{
+    list-style-type: none;
+}
+.footer-col-2{
+    flex-basis: 13%;
+    text-align: center;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px;
+}
+.copyright{
+    text-align: center;
+}
+.toggle-button{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 25px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color:white;
+    border-radius: 10px;
+}
+@media (max-width:500px){
+    .toggle-button{
+        display: none;
+    }
+    #MenuItems{
+    /*display: none; */
+    flex-direction: column;
+    align-items: center;
+    
+    }
+    .logo{
+        position: relative;
+        text-align: center;
+    }
+    .navbar{
+        display:block;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        
+    }
+    .nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    nav li{
+        text-align:center;
+        
+    }
+}
+
+  
